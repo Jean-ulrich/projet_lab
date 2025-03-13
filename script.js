@@ -1,3 +1,4 @@
+// Animation au défilement
 function animateOnScroll() {
     const elements = document.querySelectorAll('.animate-on-scroll');
   

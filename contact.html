@@ -1,169 +1,171 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - ChezJyn</title>
-  <meta name="description" content="Contactez-nous pour en savoir plus sur le mini projecteur portable ChezJyn. Nous sommes disponibles pour répondre à vos questions.">
-  <meta name="keywords" content="contact ChezJyn, support projecteur, projecteur portable, mini projecteur">
-  <meta name="author" content="ChezJyn">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ChezJyn</title>
+    <meta name="description" content="Contactez-nous pour en savoir plus sur le mini projecteur portable ChezJyn. Nous sommes disponibles pour répondre à vos questions.">
+    <meta name="keywords" content="contact ChezJyn, support projecteur, projecteur portable, mini projecteur">
+    <meta name="author" content="ChezJyn">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="logo.png" alt="ChezJyn" width="80">
-          </a>
-      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="avantages.html">Avantages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-      
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
-                  <i class="fas fa-search"></i>
-                </a>
-              </li>
-      
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-user"></i>
-                </a>
-              </li>
-            </ul>
+  <body>
+    <!-- barre de navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="logo.png" alt="ChezJyn" width="80">
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="avantages.html">Avantages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+        
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </li>
+        
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-user"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+<!-- formulaire de contact -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 animate-on-scroll">Contactez-nous</h2>
+        <div class="row">
+          <div class="col-md-6 animate-on-scroll">
+            <form id="contactForm" class="contact-form p-4 shadow rounded">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+            </form>
+            <div id="confirmationMessage" class="mt-3 text-center" style="display: none;">
+              <p class="text-success">Merci ! Votre message a été envoyé.</p>
+            </div>
+          </div>
+    
+          <div class="col-md-6 animate-on-scroll mt-5">
+            <div class="contact-info p-4 shadow rounded">
+              <h3 class="mb-4">Informations de Contact</h3>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  <strong>Adresse :</strong> Côte d'Ivoire, Abidjan
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-phone me-2"></i>
+                  <strong>Téléphone :</strong> +225 0788419359
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-envelope me-2"></i>
+                  <strong>Email :</strong> support@chezjyn.com
+                </li>
+              </ul>
+              <h3 class="mt-4 mb-3">Horaires d'Ouverture</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2">Lundi - Vendredi : 9h00 - 18h00</li>
+                <li>Samedi : 10h00 - 14h00</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
 
+    <section class="map-section my-5 animate-on-scroll">
+      <div class="container">
+        <h2 class="text-center mb-5">Où nous trouver</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.23456789!2d-4.123456789!3d5.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDcnMjQuNCJOIDTCsDA3JzEwLjgiVw!5e0!3m2!1sfr!2sci!4v1234567890123!5m2!1sfr!2sci"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
 
-  <section class="contact-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 animate-on-scroll">Contactez-nous</h2>
-      <div class="row">
-        <div class="col-md-6 animate-on-scroll">
-          <form id="contactForm" class="contact-form p-4 shadow rounded">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
-          </form>
-          <div id="confirmationMessage" class="mt-3 text-center" style="display: none;">
-            <p class="text-success">Merci ! Votre message a été envoyé.</p>
+    <!-- footer -->
+    <footer class="footer py-5" style="background-color: #1E1E2F; color: #fff;">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">ChezJyn</h5>
+            <p class="small">Découvrez nos mini projecteurs portables pour une expérience cinéma où que vous soyez.</p>
           </div>
-        </div>
-  
-        <div class="col-md-6 animate-on-scroll mt-5">
-          <div class="contact-info p-4 shadow rounded">
-            <h3 class="mb-4">Informations de Contact</h3>
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Liens Rapides</h6>
             <ul class="list-unstyled">
-              <li class="mb-3">
-                <i class="fas fa-map-marker-alt me-2"></i>
-                <strong>Adresse :</strong> Côte d'Ivoire, Abidjan
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-phone me-2"></i>
-                <strong>Téléphone :</strong> +225 0788419359
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-envelope me-2"></i>
-                <strong>Email :</strong> support@chezjyn.com
-              </li>
-            </ul>
-            <h3 class="mt-4 mb-3">Horaires d'Ouverture</h3>
-            <ul class="list-unstyled">
-              <li class="mb-2">Lundi - Vendredi : 9h00 - 18h00</li>
-              <li>Samedi : 10h00 - 14h00</li>
+              <li><a href="#" class="text-white text-decoration-none footer-link">À propos</a></li>
+              <li><a href="#" class="text-white text-decoration-none footer-link">FAQ</a></li>
+              <li><a href="#" class="text-white text-decoration-none footer-link">Politique de retour</a></li>
+              <li><a href="#" class="text-white text-decoration-none footer-link">Contact</a></li>
             </ul>
           </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Nous Contacter</h6>
+            <p class="small mb-1"><i class="fas fa-envelope"></i> <a href="mailto:diomandejean02@gmail.com" class="text-white text-decoration-none">support@chezjyn.com</a></p>
+            <p class="small mb-1"><i class="fas fa-phone"></i> <span class="text-white">+225 0788419359</span></p>
+            <p class="small"><i class="fas fa-map-marker-alt"></i> Côte d'Ivoire, Abidjan</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Newsletter</h6>
+            <form>
+              <input type="email" class="form-control mb-2" placeholder="Votre email">
+              <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="text-white me-3 footer-social"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white me-3 footer-social"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white footer-social"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <div class="text-center mt-3 small">
+          &copy; 2025 ChezJyn. Tous droits réservés.
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="map-section my-5 animate-on-scroll">
-    <div class="container">
-      <h2 class="text-center mb-5">Où nous trouver</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.23456789!2d-4.123456789!3d5.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDcnMjQuNCJOIDTCsDA3JzEwLjgiVw!5e0!3m2!1sfr!2sci!4v1234567890123!5m2!1sfr!2sci"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </div>
-  </section>
-
-  <footer class="footer py-5" style="background-color: #1E1E2F; color: #fff;">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-md-3 mb-4">
-          <h5 class="fw-bold">ChezJyn</h5>
-          <p class="small">Découvrez nos mini projecteurs portables pour une expérience cinéma où que vous soyez.</p>
-        </div>
-        <div class="col-md-3 mb-4">
-          <h6 class="fw-bold">Liens Rapides</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none footer-link">À propos</a></li>
-            <li><a href="#" class="text-white text-decoration-none footer-link">FAQ</a></li>
-            <li><a href="#" class="text-white text-decoration-none footer-link">Politique de retour</a></li>
-            <li><a href="#" class="text-white text-decoration-none footer-link">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-4">
-          <h6 class="fw-bold">Nous Contacter</h6>
-          <p class="small mb-1"><i class="fas fa-envelope"></i> <a href="mailto:diomandejean02@gmail.com" class="text-white text-decoration-none">support@chezjyn.com</a></p>
-          <p class="small mb-1"><i class="fas fa-phone"></i> <span class="text-white">+225 0788419359</span></p>
-          <p class="small"><i class="fas fa-map-marker-alt"></i> Côte d'Ivoire, Abidjan</p>
-        </div>
-        <div class="col-md-3 mb-4">
-          <h6 class="fw-bold">Newsletter</h6>
-          <form>
-            <input type="email" class="form-control mb-2" placeholder="Votre email">
-            <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
-          </form>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="#" class="text-white me-3 footer-social"><i class="fab fa-facebook fa-lg"></i></a>
-        <a href="#" class="text-white me-3 footer-social"><i class="fab fa-twitter fa-lg"></i></a>
-        <a href="#" class="text-white footer-social"><i class="fab fa-instagram fa-lg"></i></a>
-      </div>
-      <div class="text-center mt-3 small">
-        &copy; 2025 ChezJyn. Tous droits réservés.
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="scripts/scripts.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </body>
+  </html>

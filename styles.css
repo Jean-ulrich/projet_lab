@@ -96,6 +96,7 @@ body {
   overflow: hidden; 
 }
 
+/* Animation de l'image de fond */
 @keyframes backgroundScroll {
   0% {
     transform: scale(1);
@@ -120,6 +121,7 @@ body {
   animation: backgroundScroll 10s ease-in-out infinite alternate;
 }
 
+/* Animation du texte */
 .hero-section h1,
 .hero-section .lead,
 .hero-section .btn,
