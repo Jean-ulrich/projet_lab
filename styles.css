@@ -212,7 +212,7 @@ body {
 
 @media (max-width: 768px) {
   .carousel-item {
-    height: 50vh; 
+    height: 40vh; 
     margin-top: 50px;
   }
 
@@ -222,6 +222,21 @@ body {
 
   .carousel-caption p {
     font-size: 1rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 50vh; 
+    padding-top: auto;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1rem; 
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem; 
   }
 }
 
