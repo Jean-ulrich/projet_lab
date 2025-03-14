@@ -82,8 +82,9 @@ body {
   background-color: #0056b3;
 }
 
+/* styles.css */
 .hero-section {
-  background-image: url('images/projecteur\ 1.png');
+  background-image: url('images/projecteur 1.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -93,7 +94,29 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; 
+  }
+
+  .hero-section .lead {
+    font-size: 1rem; 
+  }
+
+  .hero-section .btn {
+    font-size: 0.9rem; 
+    padding: 8px 16px;
+  }
 }
 
 /* Animation de l'image de fond */
@@ -157,8 +180,10 @@ body {
   transition-delay: 0.8s;
 }
 
+/* styles.css */
 .carousel-item {
   height: 100vh;
+  margin-top: 50px;
 }
 
 .carousel-item img {
@@ -183,6 +208,21 @@ body {
 .carousel-caption p {
   font-size: 1.25rem;
   animation: slideInRight 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 50vh; 
+    margin-top: 50px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem; 
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; 
+  }
 }
 
 .avantages-section,
@@ -253,6 +293,18 @@ body {
 
 .avantages-section p {
   color: #666;
+}
+
+/* styles.css */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .avantage-card img {
+    max-width: 80%; /* Réduire la taille des images sur les petits écrans */
+  }
 }
 
 
